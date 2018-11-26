@@ -41,6 +41,7 @@
     width: 35%;
     padding-left: 65px; }
   .c-main-footer .half {
+    float: left;
     width: 50%; }
   .c-main-footer .col-1, .c-main-footer .col-2, .c-main-footer .col-3 {
     padding-top: 36px;
