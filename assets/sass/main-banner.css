@@ -1,0 +1,223 @@
+@media (max-width: 767px) {
+  .header-space {
+    height: 67px; } }
+
+@media (max-width: 767px) {
+  .c-main-banner {
+    display: none; } }
+.c-main-banner .main-carousel .item {
+  position: relative;
+  min-height: 760px; }
+.c-main-banner .main-carousel .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .c-main-banner .main-carousel .img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/movie-posters/poster-overlap-full.png") repeat-y center bottom;
+    z-index: 1; }
+  .c-main-banner .main-carousel .img:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/movie-posters/bottom-overlay.png") repeat-x center bottom;
+    z-index: 2; }
+  .c-main-banner .main-carousel .img img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
+.c-main-banner .main-carousel .txt {
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  color: #222222; }
+  @media (max-width: 1527px) {
+    .c-main-banner .main-carousel .txt {
+      /*bottom: 8vw;*/
+      margin-bottom: 2vh; } }
+  .c-main-banner .main-carousel .txt h1 {
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 1em;
+    margin-bottom: 15px; }
+    @media (max-width: 1600px) {
+      .c-main-banner .main-carousel .txt h1 {
+        font-size: 50px; } }
+  .c-main-banner .main-carousel .txt p,
+  .c-main-banner .main-carousel .txt .details {
+    max-width: 600px;
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 25px;
+    text-transform: uppercase; }
+    @media (max-width: 1600px) {
+      .c-main-banner .main-carousel .txt p,
+      .c-main-banner .main-carousel .txt .details {
+        margin-bottom: 20px; } }
+  .c-main-banner .main-carousel .txt p {
+    font-weight: 600;
+    max-width: 400px;
+    text-transform: none; }
+    @media (max-width: 1600px) {
+      .c-main-banner .main-carousel .txt p {
+        margin-bottom: 20px; } }
+  .c-main-banner .main-carousel .txt .det-1 {
+    margin-bottom: 12px; }
+    .c-main-banner .main-carousel .txt .det-1 span {
+      display: inline-block;
+      margin: 0 5px; }
+      .c-main-banner .main-carousel .txt .det-1 span:first-child {
+        margin-left: 0; }
+      .c-main-banner .main-carousel .txt .det-1 span:last-child {
+        margin-right: 0; }
+        .c-main-banner .main-carousel .txt .det-1 span:last-child:after {
+          display: none; }
+      .c-main-banner .main-carousel .txt .det-1 span:after {
+        content: '|';
+        margin-left: 10px; }
+  .c-main-banner .main-carousel .txt .det-2 {
+    font-weight: bold; }
+    .c-main-banner .main-carousel .txt .det-2 .icon-duration {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url("/assets/img/icons/duration.png") no-repeat left top;
+      position: relative;
+      top: 5px; }
+    .c-main-banner .main-carousel .txt .det-2 span {
+      font-weight: normal;
+      display: inline-block;
+      margin-left: 15px; }
+.c-main-banner .main-carousel .action {
+  margin-top: 30px; }
+  .c-main-banner .main-carousel .action a + a {
+    margin-left: 22px; }
+.c-main-banner .main-carousel .c-btn-white,
+.c-main-banner .main-carousel .c-btn-glow {
+  min-width: 165px; }
+.c-main-banner .main-carousel-thumb {
+  margin: -13vw 0 0;
+  height: 160px;
+  overflow: hidden; }
+  @media (max-width: 1527px) {
+    .c-main-banner .main-carousel-thumb {
+      height: calc(10.4vw); } }
+  .c-main-banner .main-carousel-thumb > .o-container {
+    padding-right: 5px;
+    padding-left: 5px;
+    /* @media (max-width: 1580px){
+    	padding-right: 20px;
+    	padding-left: 20px;
+    }
+    @media (max-width: 1527px){
+    	padding-right: calc(5.4217vw - 0.654vw);
+    	padding-left: calc(5.4217vw - 0.654vw);
+    } */ }
+    @media (max-width: 1660px) {
+      .c-main-banner .main-carousel-thumb > .o-container {
+        padding: 0 5.4217vw; } }
+  .c-main-banner .main-carousel-thumb .item {
+    cursor: pointer;
+    padding: 17px 10px; }
+    @media (max-width: 1580px) {
+      .c-main-banner .main-carousel-thumb .item {
+        padding-top: 15.5px;
+        padding-bottom: 15.5px; } }
+    @media (max-width: 1527px) {
+      .c-main-banner .main-carousel-thumb .item {
+        padding-top: 1.0151vw;
+        padding-bottom: 1.0151vw;
+        padding-right: 0.654vw;
+        padding-left: 0.654vw; } }
+    .c-main-banner .main-carousel-thumb .item .wrap {
+      overflow: hidden;
+      border-radius: 7px;
+      position: relative; }
+      .c-main-banner .main-carousel-thumb .item .wrap:after {
+        content: '';
+        display: block;
+        width: 101%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../img/movie-posters/poster-overlap--small.png") no-repeat center center/cover; }
+    .c-main-banner .main-carousel-thumb .item img {
+      width: 230px; }
+  .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current {
+    transform: translateY(0px); }
+    .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current:hover {
+      transform: translateY(-17px);
+      padding-bottom: 0; }
+      @media (max-width: 1580px) {
+        .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current:hover {
+          transform: translateY(-15.5px); } }
+      @media (max-width: 1527px) {
+        .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current:hover {
+          transform: translateY(-1.0151vw); } }
+  .c-main-banner .main-carousel-thumb .slick-list .slick-slide {
+    transition: all .35s; }
+    .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active img {
+      width: 100%; }
+    .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active:hover, .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active.slick-current {
+      transform: translateY(-17px);
+      padding-bottom: 0; }
+      @media (max-width: 1580px) {
+        .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active:hover, .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active.slick-current {
+          transform: translateY(-15.5px); } }
+      @media (max-width: 1527px) {
+        .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active:hover, .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active.slick-current {
+          transform: translateY(-1.0151vw); } }
+  .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current,
+  .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active {
+    width: 240px !important;
+    /* @media (max-width: 1580px){
+    	width: 236px!important;
+    }
+    @media (max-width: 1527px){
+    	width: 15.456vw !important;
+    }
+    @media (max-width: 1500px){
+    	width: 15.3vw!important;
+    } */ }
+    @media (max-width: 1660px) {
+      .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current,
+      .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active {
+        width: 14vw !important; }
+        .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current:last-of-type,
+        .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active:last-of-type {
+          margin-right: -2px; } }
+    @media (max-width: 1023px) {
+      .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current:last-of-type,
+      .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active:last-of-type {
+        margin-right: -6px; } }
+  .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current:hover,
+  .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active:hover,
+  .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active.slick-current {
+    width: 300px !important;
+    /* @media (max-width: 1580px){
+    	width: 290px!important;
+    }
+    @media (max-width: 1527px){
+    	width: 18.992vw !important;
+    } */ }
+    @media (max-width: 1660px) {
+      .c-main-banner .main-carousel-thumb .slick-list:hover .slick-slide.slick-active.slick-current:hover,
+      .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active:hover,
+      .c-main-banner .main-carousel-thumb .slick-list .slick-slide.slick-active.slick-current {
+        width: 17.7vw !important; } }
