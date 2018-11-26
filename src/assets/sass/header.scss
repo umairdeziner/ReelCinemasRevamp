@@ -1,0 +1,367 @@
+.c-main-header{
+	background: rgba(0, 0, 0, 0.3);
+	padding: 0px 0 0 45px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 1000;
+	transition: all .35s;
+	margin-bottom: 20px;
+	
+	@media (max-width: 1580px){
+		padding-left: 5.4217vw;
+	}
+	@media (max-width: 767px){
+		padding-left: 15px;
+		background: #fff;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	
+	.logo{
+		width: 180px;
+		@media (max-width: 1600px){
+			width: 150px;
+		}
+		@media (max-width: 767px){
+			width: 110px;
+		}
+	}
+
+	.header-links{
+		margin: 0 0 0 auto;
+		@media (max-width: 1023px){
+			display: none;
+		}
+		a{
+			display: block;
+			font-size: 20px;
+			line-height: 1em;
+			font-weight: 100;
+			text-transform: uppercase;
+			color: #fff;
+
+			@media (max-width: 1800px){
+				font-size: 18px;
+			}
+			@media (max-width: 1600px){
+				font-size: 16px;
+			}
+		}
+		> ul{
+			display: flex;
+			> li{
+				padding: 0;
+				position: relative;
+				a{
+					padding: 50px 30px;
+				}
+
+				&:hover{
+					background: url('../img/pattern/black-noise.png');
+					ul{
+						display: block;
+					}
+				}
+
+				&.is-current{
+					> a{
+						background: url('../img/pattern/black-noise.png');
+					}
+				}
+			}
+			ul{
+				display: none;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background: url('../img/pattern/black-noise.png');
+				width: 320px;
+				box-shadow: 3px 3px 10px 3px rgba(0,0,0,.3);
+
+				a{
+					font-size: 16px;
+					text-transform: none;
+					padding: 20px 40px;
+					border-left: 1px solid transparent;
+					color: #dddddd;
+					transition: none;
+					&:hover{
+						background: rgba(0,0,0,0.3);
+						color: #fff;
+					}
+				}
+
+				.is-current{
+					a{
+						border-color: #c17ed3;
+						color: #c17ed3;
+						background: rgba(0,0,0,0.3);
+					}
+				}
+			}
+		}
+	}
+
+	.c-menu-btn{
+		padding: 52px 40px;
+		border-left: 1px solid rgba(255,255,255,0.1);
+	}
+
+	.not-at-top &{
+		background: rgba(0, 0, 0, 0.9);
+		.header-links>ul>li>a{
+			padding-top:    40px;
+			padding-bottom: 40px;
+		}
+		.c-menu-btn{
+			padding-top: 42px;
+			padding-bottom: 42px;
+		}
+	}
+
+
+	@media (max-width: 1600px){
+		.header-links>ul>li>a{
+			padding-top:    40px;
+			padding-bottom: 40px;
+		}
+		.c-menu-btn{
+			padding-top: 42px;
+			padding-bottom: 42px;
+		}
+
+		.not-at-top &{
+			.header-links>ul>li>a{
+				padding-top:    30px;
+				padding-bottom: 30px;
+			}
+			.c-menu-btn{
+				padding-top:    32px;
+				padding-bottom: 32px;
+			}
+		}
+	}
+
+	@media (max-width: 767px){
+		.c-menu-btn{
+			padding-top:    25px;
+			padding-bottom: 25px;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.not-at-top &{
+			background: #fff;
+			.c-menu-btn{
+				padding-top:    20px;
+				padding-bottom: 20px;
+			}
+		}
+
+	}
+}
+.c-inner-header{
+	background: #fff;
+	position: relative;
+	margin: 0px;
+}
+.c-inner-header .header-links a{
+	color: #000;
+}
+.c-menu-btn{
+	display: block;
+	position: static;
+
+	 .icon-wrap{
+		display: block;
+		width: 32px;
+		height: 16px;
+		position: relative;
+	 }
+
+	i{
+		display: block;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		position: absolute;
+		top: 0;
+		right: 0;
+		@media (max-width: 767px){
+			background: #000;
+		}
+
+		&:nth-child(2){
+			top: 50%;
+			margin-top: -1px;
+		}
+
+		&:nth-child(3){
+			top: auto;
+			bottom: 0%;
+			width: 68%;
+			transition: all .35s;
+		}
+	}
+
+	&:hover{
+		i{
+			&:nth-child(3){
+				width: 100%;
+			}
+		}
+	}
+
+	.txt{
+		display: none;
+	}
+}
+
+.c-side-nav{
+	text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    background: #0d0d0d;
+    // box-shadow: -5px 0px 5px 0px rgba(0,0,0,.4);
+    z-index: 1010;
+    height: 100%;
+    padding: 35px 45px 45px 45px;
+    overflow-y: auto;
+    transform: translateX(100%);
+	transition: transform .35s;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow-x: hidden;
+
+	@media (max-width: 767px){
+		width: 300px;
+		padding: 20px;
+		.c-social li a{
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	.nav-wrap{
+		margin: auto;
+		@media (max-width: 767px){
+			.c-subs-box input{
+				font-size: 14px;
+				line-height: 36px;
+				padding-right: 90px;
+				padding-left: 50px;
+			}
+			.c-subs-box .icon{
+			    width: 23px;
+			    height: 20px;
+			    left: 15px;
+			}
+		}
+	}
+
+    .logo{
+		border-bottom: 1px solid #1c1c1c;
+		display: block;
+		margin: 0 -45px;
+		padding: 0 45px 35px;
+		position: relative;
+		@media (max-width: 767px){
+			margin: 0 -25px;
+			padding: 0 25px 20px;
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			width: 27px;
+			height: 16px;
+			position: absolute;
+			top: 18px;
+			left: 45px;
+			background: url('../img/icons/arrow-white-right.svg') no-repeat center right;
+			background-size: auto 100%;
+			@media (max-width: 767px){
+				top: 10px;
+				left: 25px;
+			}
+		}
+
+    	img{
+    		height: 48px;
+    		margin: 0 auto;
+			@media (max-width: 767px){
+				height: 35px;
+			}
+    	}
+    }
+
+
+    .nav{
+    	margin-bottom: 50px;
+    	@media (max-width: 767px){
+    		margin-bottom: 30px;
+    	}
+    	a{
+    		font-size: 16px;
+    		line-height: 1em;
+    		color: #fff;
+    		text-transform: uppercase;
+    		font-weight: 100;
+    		padding: 30px 0;
+    		display: block;
+
+			@media (max-width: 767px){
+				font-size: 14px;
+				padding: 15px 0;
+			}
+    	}
+    	li{
+    		border-bottom: 1px dashed #3f3f3f;
+    	}
+    }
+    .c-social{
+    	margin-bottom: 40px;
+    	@media (max-width: 767px){
+    		margin-bottom: 30px;
+    	}
+    }
+    .c-subs-box{
+    	margin-bottom: 10px;
+    	@media (max-width: 767px){
+    		// margin-bottom: 10px;
+    	}
+    	input{
+    		padding-right: 110px;
+    	}
+    }
+}
+.c-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	transition: none;
+	opacity: 0;
+	z-index: -1;
+}
+
+.side-nav-is-open{
+	overflow: hidden;
+	.c-side-nav{
+		transform: translateX(0%);
+	}
+	.c-overlay{
+		z-index: 1005;
+		opacity: 1;
+		transition: opacity .35s;
+	}
+}

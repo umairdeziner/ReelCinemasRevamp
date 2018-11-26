@@ -1,0 +1,12 @@
+node_modules/
+package-lock.json
+src/assets/js/script.min.js
+src/assets/js/script.min.js.map
+src/assets/js/script.js
+src/assets/js/header.min.js
+src/assets/js/header.min.js.map
+src/assets/js/header.js
+src/assets/css/style.css
+src/assets/css/style.min.css
+src/assets/css/style.min.css.map
+dist/
