@@ -1,0 +1,23 @@
+// Custom Variables
+
+// Set Colors
+
+$white:				#FFFFFF !default;
+$black: 			#231f20 !default;
+$primary:			#c6ae86 !default;
+$primarylight:		#f3e2d0 !default;
+$secondary:			#26a7b7 !default;
+$secondarylight:	#c0e4ec !default;
+
+//fonts
+$fontenglish : 'Effra', arial, sans-serif;
+$fontarabic : 'FrutigerLTArabic';
+
+//Media Sizes
+$vpdesktopMin: 		"(min-width: 1200px)";
+$vpdesktop: 		"(max-width: 1400px)";
+$vptabletL: 		"(max-width: 1199px)";
+$vptabletP: 		"(max-width: 991px)";
+$vpmobile: 			"(max-width: 767px)";
+$vpsmmobile: 		"(max-width: 400px)";
+$vpxsmobile: 		"(max-width: 359px)";
